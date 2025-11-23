@@ -97,3 +97,12 @@ This section focuses on improving model generalization by applying regularizatio
 
 ## License
 This project is open-source and free to use for educational purposes.
+
+## Optimizing Hyperparameters
+
+To make my model more reliable, I used **k-fold cross-validation** and **GridSearchCV**.  
+- CV gave mean accuracy = 0.90 ± 0.20 and F1 = 0.93 ± 0.13, showing consistent performance.  
+- GridSearchCV found the best parameter: **C = 0.01**, with F1 ≈ 0.93 and accuracy = 1.0.  
+- The validation curve (C vs F1) showed how regularization strength impacts generalization.
+
+**Why CV matters:** Cross-validation improves trust in results because it tests the model across multiple splits, reducing randomness and giving a more realistic estimate of performance.
